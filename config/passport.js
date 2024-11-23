@@ -27,8 +27,19 @@ passport.use(
       } else {
         console.log(`User exists in db with googleId: ${user.googleId}`);
       }
+      // Either user exists or we created a new user. Returning user
+      done(null, user);
     }
   )
 );
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser(async (id, done) => {
+  const user = await User.findById(id).exec();
+  done(null, user);
+});
 
 export default passport;
