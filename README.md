@@ -7,11 +7,12 @@
 3. Clicking on Google will start the authorization process with the requested scopes
 4. After authorizing the application, the user will be verified in the application database (mongo)
 5. Serialize and deserialize the user
+6. Add cookie and session support
 
-You will see this error when running the application that will be covered next
+When using the latest version of passport, you will see the following error. This is a [known issue](<[https://](https://github.com/jaredhanson/passport/issues/904)>) and the owner plans to fix it in a future release. For now, suggestion is to pin the passport version to be **0.5.0** to resolve the issue.
 
 ```bash
-Error: Login sessions require session support. Did you forget to use express-session middleware?
+TypeError: req.session.regenerate is not a function
 ```
 
 #
