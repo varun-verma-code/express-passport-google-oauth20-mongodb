@@ -12,11 +12,12 @@
   "license": "ISC",
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "dependencies": {
+    "cookie-session": "^2.1.0",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "mongoose": "^8.8.2",
-    "passport": "^0.7.0",
+    "passport": "0.5.0",
     "passport-google-oauth20": "^2.0.0"
   }
 }
