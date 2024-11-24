@@ -7,7 +7,7 @@ function secureProtectedPage(req, res, next) {
   if (req.isAuthenticated()) {
     return next(); // Everything is good, nothing to do. return next()
   }
-  res.redirect('/login'); // Redirect to login if user is not authenticated
+  res.redirect('/auth/login'); // Redirect to login if user is not authenticated
 }
 
 // Create a middleware function to check if the user is Not Authenticated
