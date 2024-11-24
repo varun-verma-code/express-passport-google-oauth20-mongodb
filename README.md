@@ -8,6 +8,7 @@
 4. After authorizing the application, the user will be verified in the application database (mongo)
 5. Serialize and deserialize the user
 6. Add cookie and session support
+7. Add a profile page, create custom middleware and redirect users
 
 When using the latest version of passport, you will see the following error. This is a [known issue](<[https://](https://github.com/jaredhanson/passport/issues/904)>) and the owner plans to fix it in a future release. For now, suggestion is to pin the passport version to be **0.5.0** to resolve the issue.
 
