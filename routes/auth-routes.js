@@ -27,7 +27,15 @@ router.get(
 );
 
 router.get('/logout', (req, res) => {
-  res.send('Logging out');
+  req.logout();
+  res.redirect('/');
+  // req.logout(function (err) {
+  //   // Passports sets the logOut function. It removes the user session and logs them out
+  //   if (err) {
+  //     return next(err);
+  //   }
+  //   res.redirect('/');
+  // });
 });
 
 export default router;

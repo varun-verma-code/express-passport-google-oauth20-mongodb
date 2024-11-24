@@ -16,6 +16,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(
   cookieSession({
+    name: 'express-website-session', // The cookie is saved with this name in the browser
     maxAge: 24 * 60 * 60 * 1000, // 1 Day in ms
     keys: [process.env.COOKIE_SECRET], // Must be an array and may have a list of secrets
   })
