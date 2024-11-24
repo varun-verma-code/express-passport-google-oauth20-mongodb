@@ -24,8 +24,8 @@ importers:
         specifier: ^8.8.2
         version: 8.8.2
       passport:
-        specifier: 0.5.0
-        version: 0.5.0
+        specifier: 0.6.0
+        version: 0.6.0
       passport-google-oauth20:
         specifier: ^2.0.0
         version: 2.0.0
@@ -386,8 +386,8 @@ packages:
     resolution: {integrity: sha512-CB97UUvDKJde2V0KDWWB3lyf6PC3FaZP7YxZ2G8OAtn9p4HI9j9JLP9qjOGZFvyl8uwNT8qM+hGnz/n16NI7oA==}
     engines: {node: '>= 0.4.0'}
 
-  passport@0.5.0:
-    resolution: {integrity: sha512-ln+ue5YaNDS+fes6O5PCzXKSseY5u8MYhX9H5Co4s+HfYI5oqvnHKoOORLYDUPh+8tHvrxugF2GFcUA1Q1Gqfg==}
+  passport@0.6.0:
+    resolution: {integrity: sha512-0fe+p3ZnrWRW74fe8+SvCyf4a3Pb2/h7gFkQ8yTJpAO50gDzlfjZUZTO1k5Eg9kUct22OxHLqDZoKUWRHOh9ug==}
     engines: {node: '>= 0.4.0'}
 
   path-to-regexp@0.1.10:
@@ -849,10 +849,11 @@ snapshots:
 
   passport-strategy@1.0.0: {}
 
-  passport@0.5.0:
+  passport@0.6.0:
     dependencies:
       passport-strategy: 1.0.0
       pause: 0.0.1
+      utils-merge: 1.0.1
 
   path-to-regexp@0.1.10: {}
 
